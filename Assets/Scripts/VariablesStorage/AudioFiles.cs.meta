@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 2f57d9ecf22d75541879edb47577a149
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - JumpSound: {fileID: 8300000, guid: 7677b0c9d1cf30640899cceb61830cbe, type: 3}
+  - DeathSound: {fileID: 8300000, guid: 7e29a5511d837f8429c7fb5ddd46a5b1, type: 3}
+  - MenuMusic: {fileID: 8300000, guid: b6aa746fb9882b84d8ae1ff0261abd2f, type: 3}
+  - GameMusic: {fileID: 8300000, guid: bda9be9bf0a0e5847b8cf38f53753a98, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
