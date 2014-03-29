@@ -58,7 +58,7 @@ public class Animations : MonoBehaviour {
 
 	void OnCollisionEnter ( Collision collision ) {
 		if (collision.collider.tag == "Monster")
-			PlayersLifeController.KillAll ();
+			PlayersController.KillAll ();
 	}
 
 	void Rotate ( ) {

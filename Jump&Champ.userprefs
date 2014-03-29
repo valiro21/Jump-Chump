@@ -1,24 +1,25 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controller\InputController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\PlayGame.cs">
     <Files>
-      <File FileName="Assets\Scripts\Controller\AudioController.cs" Line="15" Column="2" />
-      <File FileName="Assets\Scripts\GUI\BackgroundColor.cs" Line="7" Column="27" />
-      <File FileName="Assets\Scripts\Animations\BackgroundAnimation.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Animations\Animations.cs" Line="12" Column="24" />
-      <File FileName="Assets\Scripts\Controller\GameController.cs" Line="22" Column="22" />
-      <File FileName="Assets\Scripts\VariablesStorage\AudioFiles.cs" Line="6" Column="62" />
-      <File FileName="Assets\Scripts\Controller\AudioPool.cs" Line="13" Column="2" />
-      <File FileName="Assets\Scripts\Controller\InputController.cs" Line="9" Column="4" />
+      <File FileName="Assets\Scripts\Animations\Slider.cs" Line="17" Column="5" />
+      <File FileName="Assets\Scripts\Controller\GameController.cs" Line="80" Column="7" />
+      <File FileName="c:\Users\Vali\Documents\Jump&amp;Champ\Assets\Scripts\Controller\EnemyMovement.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\Vali\Documents\Jump&amp;Champ\Assets\Scripts\Controller\SpawnPool.cs" Line="78" Column="13" />
+      <File FileName="Assets\Scripts\GUI\PlayGame.cs" Line="15" Column="32" />
+      <File FileName="c:\Users\Vali\Documents\Jump&amp;Champ\Assets\Scripts\Animations\Animations.cs" Line="61" Column="11" />
+      <File FileName="Assets\Scripts\Controller\InputController.cs" Line="10" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
+              <Node name="Animations" expanded="True" />
               <Node name="Controller" expanded="True">
-                <Node name="InputController.cs" selected="True" />
+                <Node name="PlayersLifeController.cs" selected="True" />
               </Node>
+              <Node name="GUI" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -28,8 +29,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\Vali\Documents\Jump&amp;Champ\Assets\Scripts\Controller\AudioPool.cs" line="13" />
-      <Breakpoint file="C:\Users\Vali\Documents\Jump&amp;Champ\Assets\Scripts\Controller\GameController.cs" line="68" />
-      <Breakpoint file="C:\Users\Vali\Documents\Jump&amp;Champ\Assets\Scripts\Controller\GameController.cs" line="74" />
       <Breakpoint file="C:\Users\Vali\Documents\Jump&amp;Champ\Assets\Scripts\Controller\AudioController.cs" line="17" />
       <Breakpoint file="C:\Users\Vali\Documents\Jump&amp;Champ\Assets\Scripts\Controller\AudioController.cs" line="21" />
     </BreakpointStore>

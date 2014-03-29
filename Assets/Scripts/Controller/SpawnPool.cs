@@ -74,10 +74,10 @@ public class SpawnPool : MonoBehaviour {
 	}
 
 	void Update () {
-		if (Level.level == (long)SpawnEnableLevel && !Enabled && !GameController.TimeGameOver )
+		if (GameController.level == (long)SpawnEnableLevel && !Enabled && !GameController.TimeGameOver && GameController.time > GameController.LevelZeroDuration )
 			Enable ();
 
-		if (GameController.TimeGameOver)
+		if (GameController.TimeGameOver && Enabled )
 			Disable ();
 	}
 }

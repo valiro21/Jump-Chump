@@ -4,19 +4,23 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 
 	public static bool TotalGameOver = true, TimeGameOver = true;
-	public static float time = 0f;
-	public static float deltaTime;
-	static float LastRestartTime = 0f;
+	public static float time = 0f, deltaTime, LevelZeroDuration = 2f;
 	public static GameObject God, AudioGod;
+	public static long level = 1;
+
+	static float LastRestartTime = 0f;
+	static long second;
 
 	public static void RestartGame () {
 		TotalGameOver = false;
 		TimeGameOver = false;
 		
 		//reset Players
-		PlayersLifeController.ReviveAll ();
+		PlayersController.ReviveAll ();
 
 		LastRestartTime = Time.time;
+		time = 0;
+
 		TimeScore.ResetTimeScore ();
 		AudioController.StartGameMusic ();
 		Time.timeScale = 1;
@@ -28,7 +32,7 @@ public class GameController : MonoBehaviour {
 		bool ThereAreMonsters = true;
 		while (ThereAreMonsters) {
 			ThereAreMonsters = false;
-			ThereAreMonsters = ThereAreMonsters | SpawnersLifeController.AreMonstersAlive () ;
+			ThereAreMonsters = ThereAreMonsters | SpawnersController.AreMonstersAlive () ;
 			yield return new WaitForSeconds (0.1f);
 		}
 
@@ -37,7 +41,8 @@ public class GameController : MonoBehaviour {
 		AudioController.StartMenuMusic ();
 		yield return new WaitForSeconds (1.5f);
 
-		Level.ResetLevel ();
+		level = 1;
+
 		Score.ResetScore ();
 		Time.timeScale = 0;
 		
@@ -62,6 +67,10 @@ public class GameController : MonoBehaviour {
 
 	void Update () {
 		time = Time.time - LastRestartTime;
+	
+		if ((long)time > 0 && (long)time % 20 == 0 && (long)time != second)
+			level++;
+		second = (long)time;
 	}
 
 	void Start () {

@@ -5,7 +5,7 @@ public class InputController : MonoBehaviour {
 	public static KeyCode JumpJumpKey = KeyCode.UpArrow, ChumpJumpKey = KeyCode.DownArrow;
 
 	public static bool GetTouchInput ( float position ) {
-		if (GameController.time < 0.1f)
+		if (GameController.time < 0.3f)
 			return false;
 
 		for ( int i = 0; i < Input.touchCount; i++ ) {

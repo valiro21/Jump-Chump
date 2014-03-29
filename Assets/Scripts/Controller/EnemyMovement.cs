@@ -30,8 +30,8 @@ public class EnemyMovement : MonoBehaviour {
 
 	public void Spawn ( ) {
 		//increase movement per level
-		Points = (long)Mathf.Pow (2f, (float)Level.level - 1f );
-		MovementSpeedTotal = MovementSpeed + (MovementSpeed * 20 / 100) * Level.level;
+		Points = (long)Mathf.Pow (2f, (float)GameController.level - 1f );
+		MovementSpeedTotal = MovementSpeed + (MovementSpeed * 20 / 100) * GameController.level;
 
 		float smaller = Random.Range (0f, 5f);
 
