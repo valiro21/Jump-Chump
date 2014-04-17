@@ -56,7 +56,7 @@ public class GameController : MonoBehaviour {
 	public static void GameOver () {
 		God.GetComponent<GameController>().LevelOver ();
 	}
-
+	
 
 
 	public static void SetDeltaTime () {
